@@ -28,11 +28,9 @@
     <!-- Container 2: Technical Skills -->
     <div class="col-md-6 mb-4">
       <h3 class="mt-4">Skills and Certification</h3>
-      <button mat-raised-button color="primary" class="mb-3"
-        (click)="showTechnology()">Programming Languages</button>
+      <button mat-raised-button color="primary" class="mb-3"(click)="showTechnology()">Programming Languages</button>
       <!-- child component -->
-      <app-certification
-        (certificationData)="receiveCertificationData($event)"></app-certification>
+      <app-certification (certificationData)="receiveCertificationData($event)"></app-certification>
 
       <!-- Use *ngIf to conditionally show/hide the certifications -->
       <div *ngIf="cert">

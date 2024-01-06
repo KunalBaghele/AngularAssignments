@@ -16,22 +16,17 @@ export class HomeComponent {
 
   showTechnology() {
     this.technology = !this.technology;
-    // this.cert=!this.cert;
   }
-
-  certifications: string[] = []; // Initialize certifications array
+  certifications: string[] = [];
   cert:boolean=false;
 
   receiveCertificationData(certificationInfo: string) {
-
     this.cert=!this.cert;
-    // this.technology = !this.technology;
     console.log(certificationInfo);
-
-    // Split the certificationInfo string and add to certifications array
     this.certifications = certificationInfo.split('\t');
 
   }
+
   educationalQualifications: any[] = [
     {
       degree: "PG-DAC",

@@ -23,6 +23,8 @@ import {MatCardModule} from '@angular/material/card';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { GameComponent } from './game/game.component';
 import { MatListModule } from '@angular/material/list';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
 // import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 
@@ -46,7 +48,7 @@ import { MatListModule } from '@angular/material/list';
     AppRoutingModule,
     BrowserAnimationsModule,MatSelectModule,
     MatInputModule,MatFormFieldModule,MatButtonModule,
-    FormsModule,ReactiveFormsModule,MatCardModule,MatListModule
+    FormsModule,ReactiveFormsModule,MatCardModule,MatListModule,MatGridListModule,MatIconModule
   ],
   providers: [
     provideClientHydration()

@@ -1,20 +1,17 @@
 <app-navbar></app-navbar>
-<div class="container" fxLayout="column" fxLayoutGap="10px">
+<div class="container">
   <h2>This is Parent Component</h2>
-  <mat-form-field>
-    <label for="text">Enter your message for Child:</label>
-    <input matInput placeholder="Enter here"
-      (input)="getInputFromParent($event)">
-  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Enter message for chiild</mat-label>
+    <input (change)="getInputFromParent($event)" matInput>
+</mat-form-field>
   <br>
   <button mat-raised-button color="warn" (click)="sendToChild()">Send to
     Child</button>
   <br><br>
 
-  <div fxLayout="column" fxLayoutGap="10px">
-    <div>
-      Message from Child: {{msgFromChild}}
-    </div>
+  <div>
+      <mat-label>Message from Child: {{msgFromChild}}</mat-label><br><br>
     <app-child [textFromParent]="sendToChild()"
       (childEventEmitter)="getChildMsg($event)"></app-child>
   </div>
