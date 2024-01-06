@@ -1,0 +1,7 @@
+.odd{
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px grey;
+  width: 200px;
+}

@@ -1,0 +1,8 @@
+<app-navbar></app-navbar>
+<div class="game1">
+  <app-game-control (evenEmitter)="getEvenCount($event)" (oddEmitter)="getOddCount($event) "></app-game-control>
+  <div class="even-odd-container">
+    <app-even [evenNumber]="setEvenCount()" [backgroundColor]="evenBackgroundColor"></app-even>
+    <app-odd [oddNumber]="setOddCount()" [backgroundColor]="oddBackgroundColor"></app-odd>
+  </div>
+</div>

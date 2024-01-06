@@ -1,0 +1,21 @@
+.game1{
+  padding: 15px;
+  border: 2px solid rgb(251, 251, 251);
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px grey;
+  margin-top: 100px;
+margin-left: 200px;
+  align-items: center;
+  text-align: center;
+  background-image: url('https://images.pexels.com/photos/7269674/pexels-photo-7269674.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  width: 75%;
+}
+.even-odd-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}

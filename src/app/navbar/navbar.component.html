@@ -1,0 +1,25 @@
+<nav class="navbar sticky-top head">
+  <div class="container-fluid text-center">
+    <h1 class="fw-bold mx-auto">My Angular App</h1>
+
+
+    <button mat-button [matMenuTriggerFor]="task1Menu">Task 1</button>
+    <mat-menu #task1Menu="matMenu">
+      <button mat-menu-item routerLink="/home/about" >About</button>
+
+    </mat-menu>
+
+
+    <button mat-button [matMenuTriggerFor]="task2Menu">Task 2</button>
+    <mat-menu #task2Menu="matMenu">
+      <button mat-menu-item routerLink="/home/chat" >Chat</button>
+    </mat-menu>
+
+
+    <button mat-button [matMenuTriggerFor]="task3Menu">Task 3</button>
+    <mat-menu #task3Menu="matMenu">
+      <button mat-menu-item routerLink="/home/game" >Game</button>
+    </mat-menu>
+
+  </div>
+</nav>

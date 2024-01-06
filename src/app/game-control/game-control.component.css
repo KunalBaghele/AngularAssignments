@@ -1,0 +1,23 @@
+.game {
+  padding: 5px;
+  border: 2px solid rgb(243, 238, 238);
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px grey;
+  width: 1000px;
+  margin-top: 100px;
+  margin-right: 80px;
+  margin-left: 50px;
+  background-color: rgba(170, 164, 164, 0.5);
+}
+
+h2 {
+  color: black;
+}
+
+label {
+  background-color: white;
+  padding: 3px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}

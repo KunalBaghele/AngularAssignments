@@ -1,0 +1,14 @@
+<div class="game">
+<h2>Even Odd Game</h2>
+<button mat-raised-button color="primary" (click)="startGame()" (click)="showNotificationStart()">Start</button><br><br>
+<button mat-raised-button color="warn" (click)="stopGame()" (click)="showNotificationStop()">Stop</button><br><br>
+<button mat-raised-button color="accent" (click)="resetGame()">Reset</button><br><br>
+<label>Running Number : {{timerCount}}</label>
+<!-- <div class="game">
+  <app-game-control (evenEmitter)="getEvenCount($event)" (oddEmitter)="getOddCount($event) "></app-game-control>
+  <div class="even-odd-container">
+    <app-even [evenNumber]="setEvenCount()" [backgroundColor]="evenBackgroundColor"></app-even>
+    <app-odd [oddNumber]="setOddCount()" [backgroundColor]="oddBackgroundColor"></app-odd>
+  </div>
+</div> -->
+</div>

@@ -1,0 +1,12 @@
+.head {
+  position: fixed;
+  width: 100vw;
+  z-index: 1000;
+  background-color: gray;
+}
+h1{
+  color: white;
+}
+h3{
+  color: white;
+}
