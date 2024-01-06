@@ -17,7 +17,7 @@ export class LoginComponent {
 
       // Set authentication status (you may use a service for authentication)
       // Navigate to the Home component
-      this.router.navigate(['/home']);
+      this.router.navigate(['/home/about']);
     } else {
       alert('Invalid email or password');
     }
