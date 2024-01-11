@@ -1,7 +1,10 @@
-.container{
-  border: 2px solid red;
+.child{
+  border: 1px solid lightgrey;
   border-radius: 5px;
-  box-shadow: 3px 3px 3px grey;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.1);
   padding: 10px;
   text-align: center;
+  margin-top: 150px;
+  width: 500px;
+  justify-content:space-between;
 }

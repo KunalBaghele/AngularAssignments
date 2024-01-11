@@ -1,12 +1,7 @@
-.head {
-  position: fixed;
-  width: 100vw;
-  z-index: 1000;
-  background-color: gray;
-}
-h1{
-  color: white;
-}
-h3{
-  color: white;
+.switch{
+  position: sticky;
+  top: 60px;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.1);
 }

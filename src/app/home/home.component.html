@@ -1,14 +1,14 @@
 <app-navbar></app-navbar>
-<div class="container mt-5 p-4">
+<div class="container mt-5 p-2">
   <div class="row">
     <!-- Container 1: Photo -->
-    <div class="col-md-6 mt-4 mb-4">
-      <mat-card style="max-width: 540px;">
+    <div class="col-md-6 mt-4">
+      <mat-card style="max-width: 540px; height:410px">
         <img mat-card-image
           src="../../assets/98B72DC4-0587-4BD8-9FA8-6BFA89032DE3.jpg"
           alt="Profile Image">
         <mat-card-content>
-          <h5 class="card-title">Kunal Pritlal Baghele</h5>
+          <h2 class="card-title">Kunal Pritlal Baghele</h2>
           <hr />
           <p class="card-text">DOB: 18-06-1999</p>
           <p class="card-text">Mobile: +91 9130246949</p>
@@ -24,35 +24,9 @@
         </mat-card-content>
       </mat-card>
     </div>
-
-    <!-- Container 2: Technical Skills -->
-    <div class="col-md-6 mb-4">
-      <h3 class="mt-4">Skills and Certification</h3>
-      <button mat-raised-button color="primary" class="mb-3"(click)="showTechnology()">Programming Languages</button>
-      <!-- child component -->
-      <app-certification (certificationData)="receiveCertificationData($event)"></app-certification>
-
-      <!-- Use *ngIf to conditionally show/hide the certifications -->
-      <div *ngIf="cert">
-        <mat-card *ngFor="let cert of certifications" class="mb-3">
-          <mat-card-content>
-            <h5 class="card-title">{{ cert }}</h5>
-          </mat-card-content>
-        </mat-card>
-      </div>
-
-      <!-- Use *ngIf to conditionally show/hide the programming languages -->
-      <mat-list *ngIf="technology">
-        <mat-list-item *ngFor="let language of technologies">{{ language
-          }}</mat-list-item>
-      </mat-list>
-    </div>
-  </div>
-
-  <div class="row">
     <!-- Container 3: Educational Qualifications -->
-    <div class="col-md-6 mb-4">
-      <h3 class="mt-4">Educational Qualifications</h3>
+    <div class="col-md-6 mb-4 edu">
+      <h2 class="mt-4">Educational Qualifications</h2>
 
       <mat-card *ngFor="let qualification of educationalQualifications"
         class="mb-3 text-bg-success">
@@ -71,35 +45,25 @@
       </mat-card>
     </div>
 
-    <!-- Container 4: Projects -->
-    <div class="col-md-6 mb-4 ">
-      <h3 class="mt-4">Projects Undertaken</h3>
-      <mat-card class="mb-3 border-success">
-        <mat-card-header class="text-bg-success">
-          <mat-card-title>Farming Equipment Rental</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <h5 class="card-title">Technology Used:</h5>
-          <p class="card-text">Java, Spring Boot REST API, JPA, React.JS,
-            Bootstrap, MySQL</p>
-          <hr />
-          <h5 class="card-title">Description:</h5>
-          <p class="card-text">
-            Farming Equipment Rental simplifies the equipment booking process
-            for farmers, enabling them to place orders
-            efficiently. Provide a user-friendly platform for customers, mainly
-            farmers. Implemented admin dashboard for
-            managing orders, tracking equipment availability, and communicating
-            with users and enabling them to place
-            orders efficiently. Pioneered the development and implementation of
-            the Farming Equipment Rental website
-            using a 3-tier architecture, designed and managed the database in
-            MySQL, front-end in React.js, and back-end
-            is developed Spring boot.
-          </p>
-        </mat-card-content>
-      </mat-card>
+  </div>
+</div>
+<div class="container p-2 mb-4">
+  <div class="row">
+    <!-- Container 2: Technical Skills -->
+    <div class="col-md-6 mb-4 skills">
+      <h2 class>My Skills</h2>
+      <button mat-raised-button color="primary" class="mb-3"
+        (click)="showTechnology()">Programming Languages</button>
+
+      <div *ngIf="technology" class="d-flex">
+        <mat-card *ngFor="let language of technologies" class="mb-3"
+          style="max-width: 140px;">
+          <mat-card-content>
+            <h5 class="card-title">{{ language }}</h5>
+          </mat-card-content>
+        </mat-card>
+      </div>
     </div>
   </div>
-  <button mat-raised-button color="primary" (click)="abc()">Click</button>
+  <button mat-raised-button color="primary" (click)="abc()">Click</button><br><br>
 </div>

@@ -2,6 +2,6 @@
 <h2>Even Odd Game</h2>
 <button mat-raised-button color="primary" (click)="startGame()" (click)="showNotificationStart()">Start</button><br><br>
 <button mat-raised-button color="warn" (click)="stopGame()" (click)="showNotificationStop()">Stop</button><br><br>
-<button mat-raised-button color="accent" (click)="resetGame()">Reset</button><br><br>
+<button mat-raised-button color="accent" (click)="resetGame()" *ngIf="showReset">Reset</button><br><br>
 <label>Running Number : {{timerCount}}</label>
 </div>

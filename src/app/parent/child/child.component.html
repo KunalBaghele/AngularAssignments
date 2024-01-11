@@ -1,16 +1,17 @@
-<div class="container" fxLayout="column" fxLayoutGap="10px">
+<div class="child">
   <h2>This is Child Component</h2>
   <mat-form-field class="example-full-width">
     <mat-label>Enter message for parent</mat-label>
     <input (change)="getInputFromChild($event)" matInput>
-</mat-form-field>
+  </mat-form-field>
   <br>
+
   <button mat-raised-button color="warn" (click)="sendToParent()">Send to
     Parent</button>
   <br><br>
 
   <div>
     Message from Parent: {{textFromParent}}
-  </div>
+  </div><br>
 
 </div>

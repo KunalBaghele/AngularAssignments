@@ -7,3 +7,24 @@ c1{
   margin-top: 100px;
 }
 
+.head {
+  position: sticky;
+  right: 0;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+ }
+ footer {
+  position: sticky;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  text-align: center;
+  z-index: 1;
+}
+.spacer {
+  flex: 1 1 auto;
+}

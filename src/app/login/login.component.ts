@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class LoginComponent {
   email: string = '';
   password: string = '';
+  hide = true;
   constructor(private router: Router) { }
   login(): void {
     if (this.email === 'k@gmail.com' && this.password === 'kunal') {

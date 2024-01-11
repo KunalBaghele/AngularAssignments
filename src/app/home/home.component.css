@@ -1,15 +1,29 @@
-h3{
+h2{
   color: black;
+  text-align: center;
 }
-.head {
-  /* position: fixed; */
-  width: 100%;
-  z-index: 1000;
-}
-.container{
-  margin-top: 80px;
-}
+
 img{
   width: 150px;
   height: 150px;
+ margin-left: 200px;
+ padding: 10px;
+}
+
+mat-card{
+  border: 1px solid lightgray;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.edu{
+  border: 1px solid lightgray;
+   border-radius: 5px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+.skills{
+  border: 1px solid lightgray;
+  border-radius: 5px;
+ box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+ overflow: auto;
 }

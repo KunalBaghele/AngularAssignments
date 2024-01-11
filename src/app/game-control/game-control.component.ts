@@ -12,12 +12,13 @@ export class GameControlComponent {
   timer: any;
   evenCount = 0;
   oddCount = 0;
+  showReset:boolean=false;
 
   @Output() evenEmitter = new EventEmitter();
   @Output() oddEmitter = new EventEmitter();
 
   startGame() {
-
+    this.showReset=true;
     this.timer = setInterval(() => {
       this.timerCount++;
 
@@ -35,7 +36,10 @@ export class GameControlComponent {
     clearInterval(this.timer);
   }
   resetGame(){
+    this.showReset=false;
     this.timerCount=0;
+    this.evenEmitter.emit(0);
+    this.oddEmitter.emit(0);
     this.evenCount=0;
     this.oddCount=0;
   }
@@ -52,6 +56,5 @@ export class GameControlComponent {
       duration: 2000,
     });
   }
-// ////////////////////////////////////////////////////////////////////
 
 }
