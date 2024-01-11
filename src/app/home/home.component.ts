@@ -6,8 +6,12 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  abc(){
-    alert("You clicked me..!!!");
+  downloadResume():void{
+    const link = document.createElement('a');
+    link.href = '/assets/KB.pdf';
+    link.target = '_blank';
+    link.download = 'Kunal-Baghele.pdf';
+    link.click();
   }
 
   technologies: string[] = ['Java', 'SpringBoot', 'React.js', 'Angular','MySQL','Bootstrap','HTML','CSS'];
