@@ -36,6 +36,7 @@ export class GameControlComponent {
     clearInterval(this.timer);
   }
   resetGame(){
+    this.stopGame();
     this.showReset=false;
     this.timerCount=0;
     this.evenEmitter.emit(0);
